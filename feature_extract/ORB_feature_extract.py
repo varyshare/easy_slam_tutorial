@@ -1,7 +1,9 @@
 '''
 使用OpenCV实现ORB特征点提取
 作者：知乎@Ai酱
+代码地址：https://github.com/varyshare/easy_slam_tutorial/tree/master/特征提取_feature_extract
 '''
+    
 # -*- coding: utf-8 -*-
 import cv2
 import numpy as np
@@ -16,4 +18,5 @@ result_img = cv2.drawKeypoints(img,keypoint,None,color=(0,255,0),flags=cv2.IMREA
 # 4. 显示含有关键点的图片
 cv2.imshow("ORB feature point extract",result_img)
 cv2.waitKey(0)
+
 
