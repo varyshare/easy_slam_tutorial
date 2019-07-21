@@ -28,7 +28,7 @@ pass
 r_pixel = 50 # 圆的半径,单位：像素
 # 初始化,画第一个点，从水平最右边那个点开始画
 (x,y) = (r_pixel,0)
-draw(x,y)
+
 """
 从定义来讲就是
 P_k=d1+d2
@@ -39,7 +39,7 @@ d2 = 第2个下一步待选点离圆弧的距离（正数）
 P_k = -2*r_pixel + 3
 
 # 迭代的求完1/8圆弧
-while x>y:
+while x>=y:
     # 下一步有两个待选点，具体选哪个要看P_k>0 或 <0
     if P_k>=0:# 外侧候选点偏离圆弧更远
         P_k_next =  P_k - 4*x + 4*y + 10
@@ -47,22 +47,21 @@ while x>y:
     else:# 内侧候选点偏离圆弧更远
         P_k_next =  P_k + 4*y + 6
         (x_next,y_next) = (x, y+1)
-
-    # 更新坐标和P_k
-    (x,y) = (int(x_next),int(y_next))
-    P_k = P_k_next
-    
     # 对称法画其他地方
     draw(x,y)
-   
     draw(-x,y) 
     draw(x,-y) 
     draw(-x,-y) 
-    
+
     draw(y,x) 
     draw(y,-x) 
     draw(-y,x) 
     draw(-y,-x) 
+    # 更新坐标和P_k
+    (x,y) = (int(x_next),int(y_next))
+    P_k = P_k_next
+    
+    
 
 pass
 
