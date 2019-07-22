@@ -9,8 +9,8 @@ https://blog.csdn.net/varyshare/article/details/96724103
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = np.zeros((105,105)) # 创建一个105x105的画布
-
+img = np.zeros((7,7)) # 创建一个105x105的画布
+count = 0
 def draw(x,y):
     """ 
      绘制点(x,y)
@@ -18,14 +18,12 @@ def draw(x,y):
      因为数组(0,0)是左上，而原先坐标系(0,0)是中心点
      而且数组行数向下是增加的。
     """
-    # 平移原点
-    x += int(img.shape[0]/2)
-    y += int(img.shape[1]/2)
-    # 
-    img[-y,x] = 1
+
+    img[-y+int(img.shape[0]/2),x+int(img.shape[1]/2)] = 1
+
 pass
 
-r_pixel = 50 # 圆的半径,单位：像素
+r_pixel = 3 # 圆的半径,单位：像素
 # 初始化,画第一个点，从水平最右边那个点开始画
 (x,y) = (r_pixel,0)
 
@@ -67,6 +65,7 @@ pass
 
 # 绘制图片
 plt.imshow(img)
+
 
 
 
