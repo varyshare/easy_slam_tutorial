@@ -19,7 +19,7 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190722103253875.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3ZhcnlzaGFyZQ==,size_16,color_FFFFFF,t_70)
 
 ### 计算机图形学Bresenham画圆法Python实现
-[教程](./feature_extract/易懂的Bresenham 布雷森汉姆算法画圆的原理与Python编程实现教程.md) [代码](./feature_extract/bresenham_circle.py)
+[教程](./feature_extract/Bresenham 布雷森汉姆算法画圆教程.md) [代码](./feature_extract/bresenham_circle.py)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190721174903599.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3ZhcnlzaGFyZQ==,size_16,color_FFFFFF,t_70)
 
