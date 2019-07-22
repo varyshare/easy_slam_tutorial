@@ -2,8 +2,10 @@
 Features from Accelerated Segment Test (FAST)
 Python实现，
 从0开始，最原始最简单的FAST特征点提取方法（无金字塔采样）
-代码地址：
+代码地址：https://github.com/varyshare/easy_slam_tutorial/tree/master/feature_extract
+欢迎start这项目
 教程地址：https://blog.csdn.net/varyshare/article/details/96430924
+代码没有经过优化，所以会有点卡
 '''
 import numpy as np
 import matplotlib.pyplot as plt
