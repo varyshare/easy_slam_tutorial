@@ -5,7 +5,7 @@ Python实现，
 代码地址：https://github.com/varyshare/easy_slam_tutorial/tree/master/feature_extract
 欢迎start这项目
 教程地址：https://blog.csdn.net/varyshare/article/details/96430924
-代码没有经过优化，所以会有点卡
+代码没有怎么经过优化，所以会有0.8s左右的卡顿
 '''
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,16 +28,16 @@ def bresenham_circle():
     """
     return: 圆周上所有的点相对圆心的坐标列表。
     即，返回圆心在(0,0)处时圆周上各点的坐标。
-    返回数据格式[[x1,y1],[x2,y2]...]
+    返回一个r_pixel*r_pixel的矩阵，圆周上的点标记为1，其他地方标记为0
     """
 
-    _canvas = np.zeros((2*(r_pixel+1),2*(r_pixel+1)))
+    _masked_canvas = np.zeros((2*r_pixel+1,2*r_pixel+1))
     def save(x,y):
         """ 
          把(x,y)加入到结果列表中
          注意：需要把(x,y)变换到数组坐标系（图形学坐标系）
         """
-        _canvas[-y+r_pixel,x+r_pixel] = 1
+        _masked_canvas[-y+r_pixel,x+r_pixel] = 1
     pass
 
     # 初始化,画第一个点，从水平最右边那个点开始画
@@ -75,15 +75,11 @@ def bresenham_circle():
         (x,y) = (int(x_next),int(y_next))
         P_k = P_k_next
     pass
-    # 找到圆周各点的坐标
-    circular_index = np.where(_canvas==1)
-    circular_points_list_ = np.array(list(zip(circular_index[0],circular_index[1])))
-    # 将目前这些点的坐标系原点移动到圆心
-    circular_points_list_ -=  np.array([r_pixel,r_pixel])
-    return circular_points_list_
+
+    return _masked_canvas
 
 # 先bresenham算法算出半径为r_pixel时圆周上的点相对圆心的坐标
-circular_points_list = np.array(bresenham_circle())
+masked_canvas = bresenham_circle()
 def key_point_test(_row,_col):
     """
     检测像素点(_row,_col)是否是关键点。
@@ -91,21 +87,17 @@ def key_point_test(_row,_col):
     差异度较大(>h_gray_scale)的像素点个数超过k_diff_point个
     return: boolean
     """
-    h_diff_count = 0
-
-    for point_i in range(len(circular_points_list)):
-        surroud_i_row = circular_points_list[point_i][0] + _row
-        surroud_i_col = circular_points_list[point_i][1] + _col
-        
-        if abs(img[_row,_col]-img[surroud_i_row,surroud_i_col]) > h_gray_scale:
-            h_diff_count += 1
-        pass
-    pass
-
-    if h_diff_count > k_diff_point:
+    # 获取以(_row,_col)为几何中心的7x7正方形区域内的像素值
+    surround_points = img[_row-3:_row+3+1,_col-3:_col+3+1]
+    
+    # 获取圆周上的点与圆心的像素差值的绝对值
+    _dist = np.abs((surround_points - img[_row,_col])) * masked_canvas
+    
+    if (_dist>h_gray_scale).sum()> k_diff_point:
         return True
     else:
         return False
+
 
 key_point_list = []
 
@@ -119,6 +111,7 @@ for row in range(r_pixel,img.shape[0]-r_pixel):
             
     pass
 pass
+
 
 img_with_keypoints = cv2.drawKeypoints(img,key_point_list,outImage=np.array([]),color=(0,0,255))
 cv2.imshow("show key points",img_with_keypoints)
