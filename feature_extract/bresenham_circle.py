@@ -9,7 +9,7 @@ https://blog.csdn.net/varyshare/article/details/96724103
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = np.zeros((7,7)) # 创建一个105x105的画布
+img = np.zeros((105,105)) # 创建一个105x105的画布
 count = 0
 def draw(x,y):
     """ 
@@ -23,7 +23,7 @@ def draw(x,y):
 
 pass
 
-r_pixel = 3 # 圆的半径,单位：像素
+r_pixel = 50 # 圆的半径,单位：像素
 # 初始化,画第一个点，从水平最右边那个点开始画
 (x,y) = (r_pixel,0)
 

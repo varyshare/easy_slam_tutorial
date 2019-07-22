@@ -1,7 +1,7 @@
 '''
 使用OpenCV实现ORB特征点提取
 作者：知乎@Ai酱
-代码地址：https://github.com/varyshare/easy_slam_tutorial/tree/master/特征提取_feature_extract
+代码地址：https://github.com/varyshare/easy_slam_tutorial/tree/master/feature_extract
 '''
     
 # -*- coding: utf-8 -*-
