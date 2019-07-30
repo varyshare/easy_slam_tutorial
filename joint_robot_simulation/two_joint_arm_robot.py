@@ -119,7 +119,7 @@ def main():
     arm_robot = TwoLinkArm()
     arm_robot.animation(target_x,target_y)
     fig.canvas.mpl_connect("button_press_event", arm_robot.to_mouse_posi)
-    plt.ioff() # 一定要终止交互模式不然会一闪而过
+    plt.ioff() # 一定要在plt.show()之前终止交互模式不然会一闪而过
     plt.show()
 
 
