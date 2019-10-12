@@ -33,6 +33,9 @@ ORB特征提取主要是[FAST提取特征点](./feature_extract/从零开始实�
 
 ![1563794343832](./img/orb_效果图.png)
 
+## Otsu二值化算法/大津算法（Otsu's Method Algorithm ）
+[教程+Python源代码](./Otsu's_Method_algorithm/如何理解图像处理中的Otsu's 二值化算法（大津算法）Python编程实践.md) 
+
 # 机器人模拟
 
 ## [两连杆机械臂机器人(2DOF)模拟](joint_robot_simulation/)
@@ -43,6 +46,8 @@ ORB特征提取主要是[FAST提取特征点](./feature_extract/从零开始实�
 
 下面是效果图，**打开你的编辑器跟着我写的代码实践吧，你的star和关注是我持续分享的动力** 。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190724160425592.gif)
+
+
 
 
 
