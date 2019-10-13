@@ -35,7 +35,10 @@ ORB特征提取主要是[FAST提取特征点](./feature_extract/从零开始实�
 
 ## Otsu二值化算法/大津算法（Otsu's Method Algorithm ）
 [教程+Python源代码](./Otsu's_Method_algorithm/如何理解图像处理中的Otsu's 二值化算法（大津算法）Python编程实践.md) 
-
+![在这里插入图片描述](./Otsu's_Method_algorithm/eight_二值化效果.png)
+# 高斯模糊代码+教程
+[教程+Python源代码](./image_smooth_blur/如何理解高斯模糊原理与具体Python编程实现.ipynb) 
+![高斯模糊效果](./image_smooth_blur/高斯模糊效果.png)
 # 机器人模拟
 
 ## [两连杆机械臂机器人(2DOF)模拟](joint_robot_simulation/)
