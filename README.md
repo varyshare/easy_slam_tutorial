@@ -12,7 +12,8 @@
 [![tokei](https://tokei.rs/b1/github/varyshare/easy_slam_tutorial/)](https://github.com/AtsushiSakai/PythonRobotics)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://www.zhihu.com/people/yuanmuou/activities)
 
-简单的从零开始实现视觉SLAM理论与实践教程，使用Python实现。包括：ORB特征点提取，对极几何，视觉里程计后端优化，实时三维重建地图。A easy SLAM practical tutorial (Python).
+简单的从零开始实现视觉SLAM理论与实践教程，使用Python实现。包括：ORB特征点提取，对极几何，视觉里程计后端优化，实时三维重建地图。Otsu二值化、贝叶斯滤波、快速连通域标记算法
+# A easy SLAM practical tutorial (Python).
 
 ## 目录
 
