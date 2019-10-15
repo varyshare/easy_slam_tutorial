@@ -1,7 +1,8 @@
 # Easy  SLAM and Robotic Tutorial Python Implement
 
 # 简单的SLAM与机器人教程Python代码实现
-
+**欢迎点小星星收藏本github项目**
+项目作者：[知乎@司南牧](https://www.zhihu.com/people/yuanmuou/activities)
 # How to learn SLAM and Robotic
 
 [![Build Status](https://travis-ci.org/AtsushiSakai/PythonRobotics.svg?branch=master)](https://travis-ci.org/varyshare/easy_slam_tutorial)
@@ -9,10 +10,10 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/sb279kxuv1be391g?svg=true)](https://ci.appveyor.com/project/varyshare/easy_slam_tutorial)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/AtsushiSakai/PythonRobotics.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/AtsushiSakai/PythonRobotics/context:python)
 [![CodeFactor](https://www.codefactor.io/repository/github/atsushisakai/pythonrobotics/badge/master)](https://www.codefactor.io/repository/github/varyshare/easy_slam_tutorial/overview/master)
-[![tokei](https://tokei.rs/b1/github/varyshare/easy_slam_tutorial/)](https://github.com/AtsushiSakai/PythonRobotics)
+[![tokei](https://tokei.rs/b1/github/varyshare/easy_slam_tutorial/)](https://github.com/varyshare/easy_slam_tutorial)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://www.zhihu.com/people/yuanmuou/activities)
 
-简单的从零开始实现视觉SLAM理论与实践教程，使用Python实现。包括：ORB特征点提取，对极几何，视觉里程计后端优化，实时三维重建地图。Otsu二值化、贝叶斯滤波、快速连通域标记算法
+简单的从零开始实现视觉SLAM理论与实践教程，使用Python实现。包括：ORB特征点提取，对极几何，视觉里程计后端优化，实时三维重建地图。Otsu二值化、贝叶斯滤波、快速连通域标记算法,带标记的目标跟踪实践
 # A easy SLAM practical tutorial (Python).
 
 ## 目录
