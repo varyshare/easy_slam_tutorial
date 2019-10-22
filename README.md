@@ -41,13 +41,19 @@ ORB特征提取主要是[FAST提取特征点](./feature_extract/从零开始实�
 # 高斯模糊代码+教程
 [教程+Python源代码](./image_smooth_blur/如何理解高斯模糊原理与具体Python编程实现.ipynb) 
 ![高斯模糊效果](./image_smooth_blur/高斯模糊效果.png)
+
+### Fast Labeling快速标记连通物体检测与标记目标追踪
+[连通组件检测与标记目标追踪代码与教程](./Connected_Components)
+[连通组件检测与标记目标追踪真实场景实践](./Connected_Components/real_scene_practice)
+
+
 # 机器人模拟
 
-## [两连杆机械臂机器人(2DOF)模拟](joint_robot_simulation/)
+## [两连杆机械臂机器人(2DOF)模拟](./joint_robot_simulation/)
 
 鼠标选定屏幕上一点，然后求逆解进行运动Python实现代码
 
-代码地址（同一个文件夹）:[two_joint_arm_robot.py](two_joint_arm_robot.py)
+代码地址（同一个文件夹）:[two_joint_arm_robot.py](./joint_robot_simulation/two_joint_arm_robot.py)
 
 下面是效果图，**打开你的编辑器跟着我写的代码实践吧，你的star和关注是我持续分享的动力** 。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190724160425592.gif)
