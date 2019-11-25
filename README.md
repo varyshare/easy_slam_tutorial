@@ -1,7 +1,7 @@
 # Easy  SLAM and Robotic Tutorial Python Implement
 
 # 简单的SLAM与机器人教程Python代码实现
-**欢迎点小星星收藏本github项目**
+**欢迎点小星星收藏本github项目**，如果你想增加内容欢迎fork，然后再在自己项目下修改，然后提交合并请求。或者发私信给[知乎@司南牧](https://www.zhihu.com/people/yuanmuou/activities)，please feel free。
 项目作者：[知乎@司南牧](https://www.zhihu.com/people/yuanmuou/activities)
 # How to learn SLAM and Robotic
 
@@ -46,6 +46,10 @@ ORB特征提取主要是[FAST提取特征点](./feature_extract/从零开始实�
 [连通组件检测与标记目标追踪代码与教程](./Connected_Components)
 [连通组件检测与标记目标追踪真实场景实践](./Connected_Components/real_scene_practice)
 
+# 十分钟如何理解RANSAC算法Python实践
+
+[RANSAC教程与代码](RANSAC)
+
 
 # 机器人模拟
 
@@ -55,7 +59,7 @@ ORB特征提取主要是[FAST提取特征点](./feature_extract/从零开始实�
 
 代码地址（同一个文件夹）:[two_joint_arm_robot.py](./joint_robot_simulation/two_joint_arm_robot.py)
 
-下面是效果图，**打开你的编辑器跟着我写的代码实践吧，你的star和关注是我持续分享的动力** 。
+下面是效果图，**打开你的编辑器跟着我写的代码实践吧，你的star收藏和关注是我持续分享的动力** 。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190724160425592.gif)
 
 
